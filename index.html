@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <style>
+    
+       body {
+        font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        color: #fff;
+        background: #202731;
+        overflow-x: hidden;
+       }
+
+       section {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        min-height: 400px;
+        padding: 100px 20vw;
+       }
+
+       .blue {
+        background: #3c31dd;
+       }
+
+       .red {
+        background: #dd3f31;
+       }
+
+       .pink {
+        background: #ff0066;
+       }
+
+       .dark {
+        background: #0f0f10;
+       }
+
+
+       .curve {
+         position: absolute;
+         height: 225px;
+         width: 100%;
+         bottom: 0;
+       }
+
+       .curve::before {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #202731;
+        transform: translate(85%, 60%);
+       }
+
+       .curve::after {
+        content: '';
+        display: block;
+        position: absolute;
+        border-radius: 100% 50%;
+        width: 55%;
+        height: 100%;
+        background-color: #3c31dd;
+        transform: translate(-4%, 40%);
+        z-index: -1;
+       }
+
+
+       .bubble::after {
+        content: '';
+        border-top-left-radius: 50% 100%;
+        border-top-right-radius: 50% 100%;
+        position: absolute;
+        bottom: 0;
+        height: 85%;
+        width: 100%;
+        background-color: #0f0f10;
+        z-index: -1;
+       }
+
+        .wave {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 150px;
+        }
+ 
+    </style>
+
+</head>
+<body>
+    
+    <section class="blue">
+        <h1>Nice Curves</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae deserunt, sit laborum dolorum dignissimos, ut, aliquam ipsa libero magnam totam neque. Odit libero deleniti adipisci pariatur magni sint! Odio, neque!</p>
+        <div class="curve"></div>
+    </section>
+    <section class="bubble">
+        <h1>Nice Curves</h1>
+        <p>Corrupti doloribus dignissimos eum quaerat incidunt. Soluta unde atque, dolore necessitatibus porro deserunt nostrum commodi possimus explicabo animi dicta excepturi voluptates hic optio qui ex. Mollitia optio similique officiis quis.</p>
+    </section>
+    <section class="dark">
+        <h1>Nice Curves</h1>
+        <p>Vel, laborum tempore optio laudantium veniam, fugit nobis quam dolor atque quaerat eveniet debitis dolores voluptatum odit commodi natus beatae illo deserunt saepe accusamus cumque iusto aut rerum accusantium? Molestias.</p>
+    </section>
+    <section class="red">
+        <h1>Nice Curves</h1>
+        <p>Vitae accusantium officiis nisi? Maiores modi aperiam ea pariatur quo dolore quas iusto amet. Ratione repellat quae laudantium voluptatum enim perspiciatis architecto deleniti, temporibus eligendi incidunt libero minima, in pariatur.</p>
+        <div class="wave">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Culpa laudantium error dolorum, illo ab sit numquam dolorem similique nulla velit. Natus vero mollitia ipsam numquam tempora. A, eligendi. Quis voluptates inventore odio. Excepturi aliquam eum earum saepe veritatis.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Quae debitis excepturi placeat in, repellat soluta quaerat animi molestiae ratione mollitia autem itaque consequuntur adipisci, quis doloribus, sequi minus! Autem saepe incidunt libero corporis provident accusamus porro voluptatum explicabo.</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Delectus quo amet dicta voluptatem soluta veniam placeat alias vel, quibusdam quasi suscipit facilis voluptas accusantium voluptatibus ipsum. Velit sequi vitae praesentium, amet ipsam distinctio ratione soluta beatae asperiores quaerat?</p>
+    </section>
+    <section>
+        <h1>Nice Curves</h1>
+        <p>Dolorem voluptatum delectus sed reprehenderit dicta labore aperiam soluta voluptates nemo praesentium quod perferendis eligendi assumenda voluptatibus, animi laboriosam commodi enim molestiae, suscipit beatae molestias. Iusto expedita magni non itaque.</p>
+    </section>
+
+</body>
+</html>
